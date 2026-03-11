@@ -8,7 +8,7 @@ input rst;
 input rx;
 output [7:0] rx_data_out;
 
-localparam clock_divide = (clk_freq/baud_rate);
+	localparam clock_divide = (clk_freq/baud_rate);//no of cycles for 1 bit
 
 enum bit [2:0] { rx_IDLE = 3'b000,
                  rx_START = 3'b001,
